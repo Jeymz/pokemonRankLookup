@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pokemon Lookup</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4" id="ranks">
+          <h1>Theme</h1>
+          <h2>Global Rank: <span id="globalRankTheme"></span></h2>
+          <h2>US Rank: <span id="usRankTheme"></span></h2>
+        </div>
+        <div class="col-lg-4" id="ranks">
+          <h1>Standard</h1>
+          <h2>Global Rank: <span id="globalRankStandard"></span></h2>
+          <h2>US Rank: <span id="usRankStandard"></span></h2>
+        </div>
+        <div class="col-lg-4" id="ranks">
+          <h1>Overall</h1>
+          <h2>Global Rank: <span id="globalRankOverall"></span></h2>
+          <h2>US Rank: <span id="usRankOverall"></span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <input type="text" name="username" id="username" value="" placeholder="Trainer Name"></input>
+          <button type="button" name="button" onclick="checkTrainerRank()" id="checkTrainerRank">Lookup Ranks</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/pokemonLookup.js">  </script>
+  </body>
+</html>
