@@ -1,6 +1,6 @@
-const debug = require('debug')('app:server')
+const debug = require('debug')('app:server');
 const chalk = require('chalk');
-const app = require('./src/app')
+const app = require('./src/app');
 
 app.listen(3000, (err) => {
   if (err) {
@@ -15,4 +15,4 @@ app.listen(3000, (err) => {
       Port: ${chalk.green('3000')}
     `);
   }
-})
+});

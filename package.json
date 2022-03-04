@@ -1,13 +1,15 @@
 {
   "name": "random-code-projects",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.6",
+  "description": "A stupid simple NodeJS app to scan through the PTCGO ranks and find a user's placement among them.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "win": "SET DEBUG=app,app:* && nodemon server.js"
+    "lin": "node server.js",
+    "win": "node server.js",
+    "dev-win": "SET DEBUG=app,app:* && nodemon server.js",
+    "dev-lin": "DEBUG=app,app:* && nodemon server.js"
   },
-  "author": "",
+  "author": "Jay Simmons",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",

@@ -1,7 +1,4 @@
-const debug = require('debug')('app:app');
-const chalk = require('chalk');
 const express = require('express');
-const config = require('config');
 const bodyParser = require('body-parser');
 const path = require('path');
 
@@ -12,9 +9,10 @@ app.set('views', path.join(__dirname, 'assets', 'views'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/js', express.static(path.join(__dirname, 'assets', 'js')));
+app.use('/css', express.static(path.join(__dirname, 'assets', 'css')));
 
-const pokemonLookupRouter = require('./routers/pokemonLookupRouter')();
+const pokemonLookupRouter = require('./routers/ptgcoRankRouter')();
 
-app.use('/pokemonLookup', pokemonLookupRouter);
+app.use('/', pokemonLookupRouter);
 
 module.exports = app;
